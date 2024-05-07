@@ -1,0 +1,705 @@
+let soal = document.getElementsByClassName('soal-txt');
+let jawaban = document.getElementsByClassName('jawaban-txt');
+let menuHasil = document.getElementsByClassName('kuis-hasil');
+let menuUtama = document.getElementsByClassName('kuis-menu');
+let menuSoal = document.getElementsByClassName('kuis-soal');
+let buttonFinish = document.getElementsByClassName('finish-button');
+let totalSkor = document.getElementsByClassName('skor');
+let deskHasil = document.getElementsByClassName('ket-skor');
+
+let drawerApplied = false;
+let number_1 = ' ';
+let number_2 = ' ';
+let number_3 = ' ';
+let number_4 = ' ';
+let number_5 = ' ';
+let number_6 = ' ';
+let number_7 = ' ';
+let number_8 = ' ';
+let number_9 = ' ';
+let number_10 = ' ';
+let number_11 = ' ';
+let number_12 = ' ';
+let number_13 = ' ';
+let number_14 = ' ';
+let number_15 = ' ';
+let number_16 = ' ';
+let number_17 = ' ';
+let number_18 = ' ';
+let number_19 = ' ';
+let number_20 = ' ';
+let skor = 0;
+let number_soal = 1;
+
+let jenisKuis = 'python';
+
+function mulaiKuisPython() {
+
+    menuUtama[0].style.display ='none';
+    menuSoal[0].style.display = 'block';
+    jenisKuis = 'python';
+    setSoalPython();
+
+}
+
+function mulaiKuisCpp() {
+    menuUtama[0].style.display ='none';
+    menuSoal[0].style.display = 'block';
+    jenisKuis = 'dart';
+    setSoalCpp();
+}
+
+
+function setSoalCpp() {
+    if(number_soal == 1){
+        soal[0].innerHTML = `1. Apa tipe data yang tepat untuk menyimpan nilai bilangan bulat (integer) di Dart?`;
+        jawaban[0].innerHTML =`A. int`;
+        jawaban[1].innerHTML =`B. double`;
+        jawaban[2].innerHTML =`C. bool`;
+    }
+    else if (number_soal == 2) {
+        soal[0].innerHTML = `2. Mana yang merupakan cara yang benar untuk mendeklarasikan sebuah variabel bernama name dengan nilai "John" di Dart?`;
+        jawaban[0].innerHTML =`A. var name = "John";`;
+        jawaban[1].innerHTML =`B. name = "John";`;
+        jawaban[2].innerHTML =`C. String name = "John";`;
+    }
+    else if (number_soal == 3) {
+        soal[0].innerHTML = `3. Apa yang akan dicetak oleh kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  int a = 5;
+  int b = 3;
+  print(a + b);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. 15`;
+        jawaban[1].innerHTML =`B. 8`;
+        jawaban[2].innerHTML =`C. "5+3"`;
+    }
+    else if (number_soal == 4) {
+        soal[0].innerHTML = `4. Berikut adalah sebuah list di Dart: var fruits = ['apple', 'orange', 'banana'];. Bagaimana cara mengakses elemen 'orange' dari list ini?`;
+        jawaban[0].innerHTML =`A. fruits[0]`;
+        jawaban[1].innerHTML =`B. fruits[1]`;
+        jawaban[2].innerHTML =`C. fruits[2]`;
+    }
+    else if (number_soal == 5) {
+        soal[0].innerHTML = `5. Apa yang akan menjadi output dari kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  String message = 'Hello Dart';
+  print(message.substring(0, 5));
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. "Hello"`;
+        jawaban[1].innerHTML =`B. "Dart"`;
+        jawaban[2].innerHTML =`C. "Hello Dart"`;
+    }
+    else if (number_soal == 6) {
+        soal[0].innerHTML = `6. Apa yang akan dicetak oleh kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  bool isRaining = true;
+  if (isRaining) {
+    print("Bring an umbrella");
+  } else {
+    print("Enjoy the sunshine");
+  }
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. "Bring an umbrella"`;
+        jawaban[1].innerHTML =`B. "Enjoy the sunshine"`;
+        jawaban[2].innerHTML =`C. "isRaining"`;
+    }
+    else if (number_soal == 7) {
+        soal[0].innerHTML = `7. Berikut adalah sebuah fungsi di Dart. Apa output yang dihasilkan oleh pemanggilan fungsi ini?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+String greet(String name) {
+  return "Hello, $name!";
+}
+
+void main() {
+  print(greet("Alice"));
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. Hello, Alice!`;
+        jawaban[1].innerHTML =`B. Alice`;
+        jawaban[2].innerHTML =`C. Hello!`;
+    }
+    else if (number_soal == 8) {
+        soal[0].innerHTML = `8. Apa yang akan terjadi jika Anda menjalankan kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  var number = '10';
+  var parsedNumber = int.parse(number);
+  print(parsedNumber + 5);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. 15`;
+        jawaban[1].innerHTML =`B. "10"`;
+        jawaban[2].innerHTML =`C. Error`;
+    }
+    else if (number_soal == 9) {
+        soal[0].innerHTML = `9. Apa yang akan menjadi output dari kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  List<int> numbers = [1, 2, 3, 4, 5];
+  numbers.forEach((num) {
+    print(num * 2);
+  });
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. 2 4 6 8  10`;
+        jawaban[1].innerHTML =`B. 1 2 3 4 5`;
+        jawaban[2].innerHTML =`C. 2, 4, 6, 8, 10`;
+    }
+    else if (number_soal == 10) {
+        soal[0].innerHTML = `10. Berikut adalah sebuah class di Dart. Bagaimana cara membuat instance baru dari Person dengan nama "Alice" dan umur 30 tahun?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. var alice = Person('Alice', 30);`;
+        jawaban[1].innerHTML =`B. Person alice = Person('Alice', 30);`;
+        jawaban[2].innerHTML =`C. var alice = new Person('Alice', 30);`;
+        
+    }
+    else if (number_soal == 11){
+        soal[0].innerHTML = `11. Apa yang akan dicetak oleh kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  var numbers = [1, 2, 3, 4, 5];
+  var sum = numbers.reduce((value, element) => value + element);
+  print(sum);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. 15`;
+        jawaban[1].innerHTML =`B. 10`;
+        jawaban[2].innerHTML =`C. 5`;
+    }
+    else if (number_soal == 12){
+        soal[0].innerHTML = `12. Apa output dari kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  var numbers = [1, 2, 3, 4, 5];
+  var filtered = numbers.where((num) => num > 2).toList();
+  print(filtered.length);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. 3`;
+        jawaban[1].innerHTML =`B. 2`;
+        jawaban[2].innerHTML =`C. 4`;
+    }
+    else if (number_soal == 13){
+        soal[0].innerHTML = `13. Mana yang merupakan cara yang benar untuk mendeklarasikan sebuah map kosong di Dart?`;
+        jawaban[0].innerHTML =`A. Map<String, int> myMap = {};`;
+        jawaban[1].innerHTML =`B. var myMap = Map();`;
+        jawaban[2].innerHTML =`C. Semua jawaban di atas benar`;
+    }
+    else if (number_soal == 14){
+        soal[0].innerHTML = `14. Berikut adalah sebuah fungsi di Dart. Apa yang akan dicetak oleh kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  print(isEven(4));
+}
+
+bool isEven(int number) {
+  return number % 2 == 0;
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. true`;
+        jawaban[1].innerHTML =`B.false`;
+        jawaban[2].innerHTML =`C. 4`;
+    }
+    else if (number_soal == 15){
+        soal[0].innerHTML = `15. Apa yang akan terjadi jika Anda menjalankan kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  var list = [1, 2, 3];
+  list.add(4);
+  print(list);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. [1, 2, 3]`;
+        jawaban[1].innerHTML =`B. [1, 2, 3, 4]`;
+        jawaban[2].innerHTML =`C. [4, 3, 2, 1]`;
+    }
+    else if (number_soal == 16){
+        soal[0].innerHTML = `16. Apa yang akan menjadi output dari kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  var message = 'Hello World';
+  print(message.split(' ')[0]);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. Hello`;
+        jawaban[1].innerHTML =`B. World`;
+        jawaban[2].innerHTML =`C. Hello World`;
+    }
+    else if (number_soal == 17){
+        soal[0].innerHTML = `17. Apa yang akan terjadi jika Anda menjalankan kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  var numbers = [1, 2, 3];
+  print(numbers[3]);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. 3`;
+        jawaban[1].innerHTML =`B. Error`;
+        jawaban[2].innerHTML =`C. Null`;
+    }
+    else if (number_soal == 18){
+        soal[0].innerHTML = `18. Berikut adalah sebuah class di Dart. Apa yang akan tercetak oleh kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+class Rectangle {
+  int width;
+  int height;
+
+  Rectangle(this.width, this.height);
+
+  int calculateArea() {
+    return width * height;
+  }
+}
+
+void main() {
+  var rect = Rectangle(5, 3);
+  print(rect.calculateArea());
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. 15`;
+        jawaban[1].innerHTML =`B. 8`;
+        jawaban[2].innerHTML =`C. 5*3`;
+    }
+    else if (number_soal == 19){
+        soal[0].innerHTML = `19. Apa yang akan dicetak oleh kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  var colors = ['red', 'green', 'blue'];
+  colors.forEach((color) {
+    print(color.toUpperCase());
+  });
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. RED GREEN BLUE`;
+        jawaban[1].innerHTML =`B. red green blue`;
+        jawaban[2].innerHTML =`C. R G B`;
+    }
+    else if (number_soal == 20){
+        soal[0].innerHTML = `20. Apa yang akan dicetak oleh kode berikut?
+        <br><br>
+        <div class="editor-container">
+            <div class="editor-header">
+                <span class="filename">soal.dart</span>
+            </div>
+            <div class="editor">
+                <pre><code>
+void main() {
+  var message = 'Hello Dart';
+  var reversedMessage = message.split('').reversed.join();
+  print(reversedMessage);
+}
+                </code></pre>
+            </div>
+        </div>
+        `;
+        jawaban[0].innerHTML =`A. tr aD olleH`;
+        jawaban[1].innerHTML =`B. t`;
+        jawaban[2].innerHTML =`C. Dart Hello`;
+    }
+    else {
+
+        buttonFinish[0].style.display = 'block';
+
+    }
+}
+
+
+
+function setSoalPython() {
+
+
+
+}
+
+
+
+function buttonA() {
+
+    setJawaban('A');
+    number_soal += 1;
+    if(jenisKuis == 'python'){
+        setSoalPython();
+    }
+    else if (jenisKuis == 'dart') {
+        setSoalCpp();
+    }
+
+
+
+}
+function buttonB() {
+
+    setJawaban('B');
+    number_soal += 1;
+    if(jenisKuis == 'python'){
+        setSoalPython();
+    }
+    else if (jenisKuis == 'dart') {
+        setSoalCpp();
+    }
+
+}
+function buttonC() {
+
+    setJawaban('C');
+    number_soal += 1;
+    if(jenisKuis == 'python'){
+        setSoalPython();
+    }
+    else if (jenisKuis == 'dart') {
+        setSoalCpp();
+    }
+
+}
+
+
+function setJawaban(jawaban) {
+    if(number_soal==1){
+        number_1 = jawaban;
+    }
+    else if (number_soal == 2) {
+        number_2 = jawaban;
+    }
+    else if (number_soal == 3) {
+        number_3 = jawaban;
+    }
+    else if (number_soal == 4) {
+        number_4 = jawaban;
+    }
+    else if (number_soal == 5) {
+        number_5 = jawaban;
+    }
+    else if (number_soal == 6) {
+        number_6 = jawaban;
+    }
+    else if (number_soal == 7) {
+        number_7 = jawaban;
+    }
+    else if (number_soal == 8) {
+        number_8 = jawaban;
+    }
+    else if (number_soal == 9) {
+        number_9 = jawaban;
+    }
+    else if (number_soal == 10) {
+        number_10 = jawaban;
+    }
+    else if (number_soal == 11){
+        number_11 = jawaban;
+    }
+    else if (number_soal == 12){
+        number_12 = jawaban;
+    }
+    else if (number_soal == 13){
+        number_13 = jawaban;
+    }
+    else if (number_soal == 14){
+        number_14 = jawaban;
+    }
+    else if (number_soal == 15){
+        number_15 = jawaban;
+    }
+    else if (number_soal == 16){
+        number_16 = jawaban;
+    }
+    else if (number_soal == 17){
+        number_17 = jawaban;
+    }
+    else if (number_soal == 18){
+        number_18 = jawaban;
+    }
+    else if (number_soal == 19){
+        number_19 = jawaban;
+    }
+    else if (number_soal == 20){
+        number_20 = jawaban;
+    }
+    else {
+
+    }
+}
+
+function cekJawaban() {
+    if(jenisKuis == 'python'){
+        cekJawabanPython();
+    }
+    else if (jenisKuis == 'dart') {
+        cekJawabanCpp();
+    }
+}
+
+
+function cekJawabanCpp() {
+
+    if(number_1 == 'A'){
+        skor += 1;
+    }
+    if(number_2 == 'A'){
+        skor += 1;
+    }
+    if(number_3 == 'B'){
+        skor += 1;
+    }
+    if(number_4 == 'B'){
+        skor += 1;
+    }
+    if(number_5 == 'A'){
+        skor += 1;
+    }
+    if(number_6 == 'A'){
+        skor += 1;
+    }
+    if(number_7 == 'A'){
+        skor += 1;
+    }
+    if(number_8 == 'A'){
+        skor += 1;
+    }
+    if(number_9 == 'A'){
+        skor += 1;
+    }
+    if(number_10 == 'A'){
+        skor += 1;
+    }
+    if(number_11 == 'A'){
+        skor += 1;
+    }
+    if(number_12 == 'A'){
+        skor += 1;
+    }
+    if(number_13 == 'C'){
+        skor += 1;
+    }
+    if(number_14 == 'A'){
+        skor += 1;
+    }
+    if(number_15 == 'B'){
+        skor += 1;
+    }
+    if(number_16 == 'A'){
+        skor += 1;
+    }
+    if(number_17 == 'B'){
+        skor += 1;
+    }
+    if(number_18 == 'A'){
+        skor += 1;
+    }
+    if(number_19 == 'A'){
+        skor += 1;
+    }
+    if(number_20 == 'A'){
+        skor += 1;
+    }
+
+    showSkor();
+}
+
+function cekJawabanPython() {
+
+
+}
+
+
+function showSkor(){
+    menuSoal[0].style.display = 'none';
+    menuHasil[0].style.display = 'block';
+    let skorAkhir = (skor/20)*100;
+
+    if(skor >= 65 && skor <= 75){
+        deskHasil[0].innerHTML = `Hebat Tetap Semangat, Skor Kamu!`;
+    }else if(skor > 75){
+        deskHasil[0].innerHTML = `Puncak Prestasi, Skor Kamu!`;
+    }else {
+        deskHasil[0].innerHTML = `Belajar Lagi Semangat, Skor Kamu!`;
+    }
+    totalSkor[0].innerHTML = `${skorAkhir}`;
+
+}
+
+function backToMenu() {
+    menuHasil[0].style.display = 'none';
+    menuUtama[0].style.display = 'block';
+    buttonFinish[0].style.display = 'none';
+    number_soal = 1;
+    skor = 0;
+}
+
+
+
+function drawer() {
+    
+    let listMateri = document.getElementsByClassName('list-materi');
+    let materi = document.getElementsByClassName('materi');
+    let drawerIcon = document.getElementsByClassName('drawer');
+
+    if(drawerApplied == false) {
+        listMateri[0].style.width='50%';
+        listMateri[0].style.display='block';
+        materi[0].style.width='50%';
+        drawerIcon[0].innerHTML = `<button onclick="drawer()"><</button>`;
+        drawerApplied = true;
+    }
+    else {
+        listMateri[0].style.width='0%';
+        listMateri[0].style.display='none';
+        materi[0].style.width='100%';
+        drawerIcon[0].innerHTML = `<button onclick="drawer()">></button>`;
+        drawerApplied=false;
+    }
+
+
+}
+
+
+
+

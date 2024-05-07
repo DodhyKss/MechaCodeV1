@@ -1,0 +1,90 @@
+.list-kelas-container {
+    width: 80%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.list-kelas-container h2 {
+    text-align: center;
+}
+
+.list-kelas-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; /* 1 kolom */
+    /* grid-template-columns: 1fr 1fr; 1 kolom */
+
+}
+
+.kelas {
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.kelas #py  {
+    width: 66%;
+    height: 66%;
+}
+.kelas #cp  {
+    width: 80%;
+    height: 80%;
+}
+.kelas #js  {
+    width: 100%;
+    height: 90%;
+}
+
+
+.kelas:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.kelas .button-kelas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.list-kelas-container {
+    width: 80%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kelas a {
+    text-decoration: none;
+    color: #80BCBD;
+}
+
+.kelas a:hover {
+    color: gainsboro;
+    transition: 0.3s;
+}
+
+.list-kelas-container h2 {
+    color: #80BCBD;
+}
+
+@media  screen and (max-width: 1026px) {
+    .list-kelas-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr; /* 1 kolom */
+        grid-template-rows: auto auto;
+    }
+    .list-kelas-container .list-kelas-content p {
+        font-size: 80%;
+    }
+      
+}

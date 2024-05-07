@@ -1,0 +1,176 @@
+.kuis-soal {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+#kuis-head {
+    text-align: center;
+    color:#80BCBD;
+}
+
+.kuis-soal .jawaban {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 15px;
+}
+
+.kuis-soal .jawaban button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 80%;
+    margin: auto auto 10px auto;
+    background-color: #80BCBD;
+    color: white;
+}
+
+.kuis-soal ul li {
+    list-style-type: none;
+    padding: 6px;
+}
+
+.kuis-soal .soal {
+    color: black;
+}
+
+.kuis-soal .jawaban button:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+.kuis-menu {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    border-radius: 8px;
+    padding: 7px;
+    margin-top: 20px;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.kuis-menu .jawaban {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 15px;
+}
+
+.kuis-menu button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 80%;
+    margin: auto auto 10px auto;
+    background-color: #80BCBD;
+    color: white;
+}
+
+.kuis-menu .jawaban button:hover {
+    background-color:gainsboro;
+    cursor: pointer;
+    color: black;
+}
+
+
+.kuis-hasil {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+}
+
+.kuis-hasil .skor {
+    font-size: 60px;
+}
+
+.kuis-hasil h2 {
+    font-size: 30px;
+}
+
+.kuis-hasil button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 70%;
+    margin: auto auto 10px auto;
+    background-color: #80BCBD;
+    color: white;
+}
+
+.kuis-hasil .jawaban {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 15px;
+}
+
+.kuis-hasil .jawaban button:hover {
+    background-color:gainsboro;
+    cursor: pointer;
+    color: black;
+}
+
+.kuis-soal pre code {
+    color: white;
+}
+
+
+
+
+.kuis-hasil {
+    display: none;
+}
+
+.kuis-menu {
+    display: block;
+}
+
+.kuis-soal {
+    display: none;
+}
+
+.kuis-soal .finish-button {
+    display: none;
+}
+
+
+
+
+
+
+@media  screen and (max-width: 1026px) {
+    .kuis-soal {
+        width: 80%;
+    }
+    .kuis-soal .jawaban button {
+        width: 90%;
+    }
+    .kuis-hasil {
+        width: 70%;
+    }
+    .kuis-hasil .jawaban button {
+        width: 90%;
+    }
+    .kuis-menu {
+        width: 80%;
+    }
+    .kuis-menu .jawaban button {
+        width: 90%;
+    }
+}

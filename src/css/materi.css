@@ -1,0 +1,395 @@
+.materi-container {
+    width: 100%;
+}
+
+.materi-container .list-materi {
+    width: 21%;
+    height: 86%;
+    overflow:auto;
+    position: fixed;
+    background-color: white;
+    left: 0;
+    top: 7%;
+}
+
+.materi-container .materi {
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 7%;
+    width: 79%;
+    height: 79%;
+    overflow: auto;
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+.materi-container .materi .drawer {
+    display: none;
+}
+
+.materi-container .list-materi .judul-materi ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 30px 5px 30px;
+    margin-left: -30px;
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.materi-container .list-materi .judul-materi h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.materi-container .list-materi .judul-materi ul li {
+    padding-bottom: 15px;
+    list-style-type: none;
+    padding-left: 30px;
+    width: 100%;
+    margin-left: -40px;
+}
+.materi-container .list-materi .judul-materi ul a:hover {
+    background-color: gainsboro;
+}
+
+.materi-container .materi .judul-materi h5 {
+    font-size: 20px;
+}
+.materi-container .materi .materi-content p {
+    line-height: 2.0;
+    padding: 0px;
+}
+
+.materi-container .materi .materi-content {
+    width: 80%;
+    margin: auto;
+}
+.materi-container .materi .materi-content h3 {
+    font-size: 28px;
+}
+
+.materi-container .materi .materi-content .image-materi img {
+    width: 96%;
+}
+
+.materi-container .materi .materi-content button {
+    padding:14px 35px 14px 35px;
+    background-color:#80BCBD ;
+    border: none ;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.materi-container .materi .materi-content a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.materi-container .materi .materi-content button:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+}
+
+.button-back {
+    background-color: white;
+    border-bottom: 1px solid #80BCBD;
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    top: 0;
+}
+.button-next {
+    background-color: white;
+    border-top: 1px solid #80BCBD;
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    text-align: center;
+}
+.button-next .judul-back  {
+    text-align: left;
+    color: dimgray;
+}
+.button-next .judul-next  {
+    text-align: right; 
+    color: dimgray;
+}
+
+
+.materi-container .materi .materi-content .isi-materi {
+    margin: auto;
+    width: 75%;
+    height: 400px;
+}
+
+.materi-container .materi .isi-materi iframe {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.button-back .nav-kelas {
+    display: grid;
+    grid-template-columns: 76% 7% 7% 6% 10%;
+}
+
+.button-back .nav-kelas .back-btn {
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.button-back .nav-kelas a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.button-back .nav-kelas a:hover{
+    color:#80BCBD;
+    transition: 0.4s;
+}
+
+
+.button-back .nav-kelas h3 {
+    margin-top: 8px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-next h4 {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.button-back .nav-kelas .logo {
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+}
+
+.button-back .nav-kelas .back {
+    display: grid;
+    grid-template-columns: 6% 50%;
+}
+
+.icon-back {
+    width: 30px;
+    height: 30px;
+}
+.icon-next {
+    width: 30px;
+    height: 30px;
+}
+
+.button-next .next-btn1 {
+    padding-top: 7px;
+}
+.button-next .next-btn2 {
+    padding-top: 7px;
+}
+
+
+  
+
+/* BOX CODE CSS */
+body {
+
+    margin: 0;
+    padding: 0;
+  }
+  
+  .editor-container {
+    font-family: 'Courier New', Courier, monospace;
+    width: 96%;
+    background-color: slategray;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editor-header {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .filename {
+    font-weight: bold;
+  }
+  
+  .editor {
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  pre {
+    margin: 0;
+  }
+  
+  code {
+    position: relative;
+    color: white;
+  }
+  
+  code::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    pointer-events: none;
+  } 
+/* BOX CODE */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 1026px) {
+
+    .materi-container {
+        width: 100%;
+    }
+
+    .materi-container .materi .drawer {
+        display: block;
+        padding-left: 15px;
+        padding-top: 5px;
+        position: fixed;
+
+    }
+    .materi-container .materi .drawer button {
+        background-color: gainsboro;
+        border: 0px;
+        color: black;
+        width: 26px;
+        height: 26px;
+        border-radius: 5px;
+    }
+    
+    .materi-container .list-materi {
+        /* width: 50%; */
+        display: none;
+    }
+    
+    .materi-container .materi {
+        /* width: 50%; */
+        width: 100%;
+    }
+    
+
+
+
+
+    .button-next {
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+
+    }
+    .button-next .judul-back  {
+        text-align: left;
+        color: dimgray;
+    }
+    .button-next .judul-next  {
+        text-align: right; 
+        color: dimgray;
+    }
+    
+    
+    .materi-container .materi .materi-content .isi-materi {
+        margin: auto;
+        width: 75%;
+        height: 400px;
+    }
+    
+    .materi-container .materi .isi-materi iframe {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    
+
+    .nav-materi {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+
+    .button-back .nav-kelas h3 {
+        padding-top: 2px;
+        font-size: 13px;
+        text-align: right;
+    }
+    
+    .button-next .judul-back {
+        display: none;
+    }
+    .button-next .judul-next {
+        display: none;
+    }
+
+    .button-next h4 {
+        font-size: 13px;
+    }
+    
+    .button-back .nav-kelas .back {
+        display: grid;
+        grid-template-columns:40% 90%;
+    }
+
+
+    .materi-container .materi .materi-content .isi-materi {
+        margin: auto;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .materi-container .materi .isi-materi iframe {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    
+
+    
+    
+
+}

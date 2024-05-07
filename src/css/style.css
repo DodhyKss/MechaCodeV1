@@ -1,0 +1,453 @@
+/* CSS styles for the website */
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* navbar */
+  header {
+    background-color: #ffff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  header img {
+    width: 10%;
+    height: 10%;
+    margin-bottom: 30px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 0px 50px;
+
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  nav ul li a:hover {
+    color: #80BCBD;
+    transition: 0.4s;
+  }
+
+  p{
+    padding: 20px;
+  }
+  /* navbar */
+
+  /* Landing Page */
+  h2.deskripsi {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .button {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  button#choicecourse {
+    padding:14px 35px 14px 35px;
+    background-color:#80BCBD ;
+    border: none ;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+
+  button#choicecourse a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  button#choicecourse:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+  }
+  
+
+  .jumbotron {
+    text-align: left;
+    width: 100%;
+    padding: 10px 40px 0px 30px;
+    background-color: #80BCBD;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+  }
+  .jumbotron h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .jumbotron img{
+    width: 60%;
+  }
+
+
+  .testimoni {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .testimoni .image-1{
+    width: 65%;
+    margin: auto;
+  }
+
+  .testimoni .image-2{
+    width: 65%;
+    margin: auto;
+  }
+
+  .testimoni .image-3{
+    width: 65%;
+    margin: auto;
+  }
+
+  .testimoni img {
+    width: 50%;
+  
+  }
+
+  .testimoni h2 {
+    margin: 80px 0px 80px 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .aboutme {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .aboutme h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .aboutme .aboutcontent {
+    width: 100%;
+    background-color: #80BCBD;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 100%;
+  }
+
+  .aboutme img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .aboutme .aboutcontent .profile {
+    width: 50%;
+    padding: 80px 0px 80px 0px;
+    margin: auto;
+  }
+
+  .aboutme .aboutcontent .profile h3 {
+    text-align: center;
+    color: white;
+  }
+
+  .aboutme .aboutdesk {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  footer {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top: 200px;
+    border-top: 1px solid #80BCBD;
+
+  }
+
+  footer .footercontent img {
+    width: 40%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  footer .footercontent h5 {
+    text-align: left;
+    padding: 0px 0px 20px 20px;
+  }
+
+  footer .footercontent {
+    width: 15%;
+  }
+
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 8px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #f40083;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 1026px) {
+/* CSS styles for the website */
+
+/* CSS styles for the website */
+  /* navbar */
+
+  header img {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 0px;
+  }
+  
+  nav ul li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #80BCBD;
+
+  }
+
+  nav ul li:hover{
+    background-color: #80BCBD;
+  }
+  
+
+  nav ul li a:hover {
+    color: white;
+    transition: 0.4s;
+  }
+
+
+  /* navbar */
+
+  /* Landing Page */
+  h2.deskripsi {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .button {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .testimoni {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .testimoni .image-1{
+    width: 100%;
+    margin: auto;
+  }
+
+  .testimoni .image-2{
+    width: 100%;
+    margin: auto;
+  }
+
+  .testimoni .image-3{
+    width: 90%;
+    margin: auto;
+  }
+
+  .testimoni img {
+    width: 70%;
+  
+  }
+
+  .aboutme {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .aboutme h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .aboutme .aboutcontent {
+    width: 100%;
+    background-color: #80BCBD;
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .aboutme img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+  }
+
+  .aboutme .aboutcontent .profile {
+    width: 50%;
+    margin: auto;
+  }
+
+  .aboutme .aboutcontent .profile h3 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+
+  .aboutme .aboutdesk {
+    width: 75%;
+    background-color: white;
+    margin: auto;
+    padding: 80px 0px 80px 0px;
+    border-radius: 30px;
+    margin-top: -65px;
+  }
+  
+
+  .jumbotron {
+    text-align: left;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    background-color: #80BCBD;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+  }
+  .jumbotron h2 {
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    margin: auto;
+    padding-left: 50px;
+  }
+
+  .jumbotron img{
+    padding-left: 10px;
+    width: 100%;
+  }
+
+
+
+  footer {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top: 200px;
+    border-top: 1px solid #80BCBD;
+  }
+
+  footer .footercontent img {
+    width: 20%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  footer .footercontent h5 {
+    text-align: left;
+    padding: 0px 0px 20px 20px;
+    font-size: 10px;
+  }
+
+  footer .footercontent {
+    width: 80%;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin:10px 20px 20px 70px;
+  }
+
+  
+}
+
+
+@media  screen and (max-width: 765px) {
+  .fa {
+    padding: 4%;
+    font-size: 15%;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 5% 0px 5%; 
+  }
+}
